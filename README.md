@@ -13,3 +13,7 @@ Se considerará la presentación general del proyecto, la legibilidad del mismo,
 5. La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio)
 6. El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de https://validator.w3.org/ sin errores.  (Mandatorio)
 Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap.
+
+# Presentacion del proyecto. 
+
+Ofrecemos almacenamiento de los datos de tus pacientes para que lo tengas disponible desde cualquier parte y en cualquier dispositivo. Gestiona urgencias, deriva pacientes y controla en tiempo real. 
