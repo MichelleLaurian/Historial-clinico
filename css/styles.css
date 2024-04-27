@@ -1,0 +1,66 @@
+:root {
+    --principal: #023047;
+    --secundario: #219ebc;
+    --secundario2: #8ecae6;
+    --amarillo: #ffb703;
+    --naranja: #fb8500;
+    --claro: #fff;
+    --oscuro: #0D0D0D;
+
+}
+
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: var(--secundario);
+}
+
+h1,h2,h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* UTILIDADES */
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
+}
