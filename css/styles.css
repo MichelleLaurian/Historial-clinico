@@ -100,3 +100,33 @@ img {
     background-color: var(--naranja);
     border-radius: .5rem;
 }
+
+/* BANNER */
+.banner {
+    background: url("../img/banner-pricipal.jpg");
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-contenido {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-contenido h1 {
+    font-family: "Archivo Black", sans-serif;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: var(--principal)
+}
+
+.banner-contenido p {
+    text-shadow: 0 0 10px white;
+    font-weight: 700;
+    color: var(--principal)
+}
