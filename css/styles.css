@@ -234,3 +234,56 @@ img {
 .especialidad .boton {
     background-color: var(--secundario);
 }
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--principal);
+    padding: 3rem;
+    color: var(--claro);
+}
+
+.footer .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.footer .items h3 {
+    text-align: left;
+    color: darkturquoise;
+}
+
+.footer .items svg {
+    /* fill: white; */
+    /* stroke: var(--naranja) */
+    stroke: white
+}
+
+.footer .redes-sociales .redes {
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 3rem;
+}
+
+.footer .ubicacion .cedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .contacto .medios {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .copy {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 120rem;
+}
