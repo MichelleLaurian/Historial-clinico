@@ -11,6 +11,13 @@
     --text-oscuro: #242424;
     --text-claro: #444444;
 
+    /* Resoluciones */
+    --telefono: 480px;
+    --tablet: 768px;
+    --desktop: 1200px;
+
+    /* Fuentes */
+    --fuente-principal: "Montserrat", sans-serif;
 }
 
 *,*::before, *::after {
@@ -24,10 +31,10 @@ html {
 }
 
 body {
+    font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.5;
     color: var(--text-claro);
-    /* background-color: azure; */
     background-color: lightcyan;
 }
 
@@ -73,7 +80,9 @@ img {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
+}
+.sombra{
+    box-shadow: 0 2px .5rem rgba(0, 0, 0, 0.5);
 }
 
 .boton {
@@ -94,10 +103,14 @@ img {
     justify-content: right;
 }
 
+.main > section {
+    margin-top: 5rem;
+}
+
 
 /* HEADER */
 .header {
-    background-color: var(--principal);
+    background: linear-gradient(180deg,#023047, #023047de);
     border-bottom: 1px solid rgba(0, 0, 0, 0.281);
 }
 .header-contenido {
@@ -105,7 +118,6 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: none;
 }
 
 .header-contenido .logo {
@@ -113,19 +125,19 @@ img {
     border-radius: 2rem;
 }
 
-.navegacion {
+.nav-principal {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.navegacion a {
+.nav-principal a {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--claro);
     font-size: 1.5rem;
     padding: 1rem;
 }
-.navegacion a:hover {
+.nav-principal a:hover {
     background-color: var(--naranja);
     border-radius: .5rem;
 }
@@ -137,6 +149,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
 }
 
 .banner-contenido {
@@ -146,12 +159,13 @@ img {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 2rem;
 }
 
 .banner-contenido h1 {
-    font-family: "Archivo Black", sans-serif;
     text-shadow: 0 0 10px rgb(255, 255, 255);
-    color: var(--principal)
+    color: var(--principal);
+    font-weight: 900;
 }
 
 .banner-contenido p {
@@ -164,12 +178,8 @@ img {
 
 /* MAIN */
 .main {
-    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
-    /* margin-top: 2rem; */
-    /* background-color: var(--claro); */
     padding: 1rem 2rem;
     background-color: white;
-    
 }
 
 /* ESPECIALIDADES */
@@ -232,6 +242,9 @@ img {
 }
 
 .especialidad .boton {
+    background-color: var(--principal);
+}
+.especialidad .boton:hover {
     background-color: var(--secundario);
 }
 
