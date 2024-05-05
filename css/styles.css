@@ -344,3 +344,33 @@ img {
     margin-top: 3rem;
     max-width: 120rem;
 }
+
+
+
+/* sign in */
+
+.form-signin {
+    display: flex;
+    border: #fb8500 1px solid;
+    height: 80%;
+   
+}
+.form-signin h3{
+    color: aliceblue;
+}
+.form-signin form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+.form-signin input, button{
+    padding: 15px 15px 15px 35px;
+    margin: 5px;
+    border-radius:  6px;
+    
+}
+.form-signin button{
+    background-color: rgb(23, 32, 32);
+    color: aliceblue;
+}
