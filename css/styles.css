@@ -34,7 +34,7 @@ body {
     font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.5;
-    color: var(--text-claro);
+    color: var(--text-azul);
     background-color: lightcyan;
 }
 
@@ -62,6 +62,7 @@ p {
 
 a {
     text-decoration: none;
+    text-align: center;
 }
 
 ul, ol {
@@ -107,6 +108,13 @@ img {
     margin-top: 5rem;
 }
 
+.main > section:first-child {
+    margin-top: 2rem;
+}
+
+.main > section:last-child {
+    margin-bottom: 2rem;
+}
 
 /* HEADER */
 .header {
@@ -374,3 +382,46 @@ img {
     background-color: rgb(23, 32, 32);
     color: aliceblue;
 }
+
+
+/* Pag Cedes */
+
+.cedes h2 {
+    text-transform: uppercase;
+}
+
+.cedes-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media (min-width: 768px) {
+    .cedes-contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}
+
+.cede h3 {
+    color: var(--naranja);
+}
+
+.cede p {
+    /* color: var(--text-claro); */
+}
+
+.cede .mapa-contenedor {
+    display: block;
+    width: 80%  ;
+    margin: auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.316);
+}
+
+.cede .mapa-contenedor iframe {
+    width: 100%;
+}
+
