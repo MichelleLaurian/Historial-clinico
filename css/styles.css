@@ -389,7 +389,7 @@ img {
     width: 50%;
     padding: 30px 0 ;
     margin: auto;
-    height: 100%;
+    
 }
 .form-pacient form{
     /* margin: 30px 0; */
@@ -455,3 +455,22 @@ img {
     width: 100%;
 }
 
+/* contactanos */
+.contacto{
+    width: 50%;
+    padding: 30px 0 ;
+    margin: auto;
+}
+.contacto form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto input, button, textarea{
+    margin: 5px 0;
+    padding: 15px;
+    border-radius:  6px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+}
