@@ -6,7 +6,7 @@
 <body>
   <header class="header">
     <div class="header-contenido contenedor">
-      <img src="../img/logo.png" alt="logo" class="logo">
+      <img src="/img/logo.png" alt="logo" class="logo">
       <nav class="nav-principal">
         <a href="/index.html">Inicio</a>
         <a href="#">Quienes Somos</a>
@@ -17,51 +17,17 @@
       </nav>
     </div>
   </header>
-  <main>
-    <section class="form-pacient">
-      <form>
-        <fieldset>
-          <legend>Información del paciente</legend>
-          <div>
-            <input type="text" name="name" id="name" placeholder="Nombre">
-            <input type="text" name="surname" id="surname" placeholder="Apellido">
-            <input type="number" name="dni" id="dni" placeholder="DNI">
-            <input type="number" name="phone" id="phone" placeholder="Celular">
-            <input type="text" name="diagnosis" id="diagnosis" placeholder="Diagnostico">
-            <section></section>
-            <label for="birthday">Fecha de nacimiento</label>
-            <input type="date" name="birthday" id="birthday">
-            <section class="data-os">
-              <label for="oss">Obra social</label>
-              <input list="os" id="oss" name="oss" />
-              <datalist id="os">
-                <option value="OSDE">OSDE</option>
-                <option value="PAMI">PAMI</option>
-                <option value="OSECAC">OSECAC</option>
-                <option value="Swiss Medical">Swiss Medical</option>
-                <option value="No tiene">No tiene</option>
-              </datalist>
-            </section>
-            <section>
-              <label for="pictures">Foto del paciente</label>
-              <input type="file" name="pictures" id="pictures" placeholder="Foto del paciente">
-            </section>
-
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Dirección</legend>
-          <div>
-            <input type="text" name="direction" id="direction" placeholder="Calle 123">
-            <input type="text" name="location" id="location" placeholder="Provincia">
-            <input type="number" name="phoneExtra" id="phoneExtra" placeholder="Contacto de un familiar">
-          </div>
-        </fieldset>
-        <button>Enviar</button>
-      </form>
-    </section>
-  </main>
-
+<main>
+  <section class="contacto">
+    <form>
+      <h3>Contáctanos</h3>
+      <input type="text" name="name" id="name" placeholder="Juan Alberto">
+      <input type="text" name="asunto" id="asunto" placeholder="Consulta de servicio">
+      <textarea name="description" id="description" cols="30" rows="10"placeholder="Comentario ..."></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+</main>
   <footer class="footer">
     <div class="items">
       <div class="item redes-sociales">
