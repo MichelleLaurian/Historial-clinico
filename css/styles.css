@@ -423,10 +423,6 @@ img {
     text-transform: uppercase;
 }
 
-.cedes-contenido {
-
-}
-
 .lista-cedes {
     display: block;
     max-width: 30rem;
@@ -529,4 +525,39 @@ img {
 .noticia .info .fecha {
     color: var(--naranja);
     font-weight: 700;
+}
+
+/* Pagina Noticias */
+
+@media (min-width: 1200px) {
+    .especialidades-pag-contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.especialidades-pag h2 {
+    color: var(--text-naranja);
+    text-transform: uppercase;
+}
+
+.especialidad-pag {
+    margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+    .especialidad-pag {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.especialidad-pag .img-contenedor {
+    margin-bottom: 1rem;
+}
+
+.especialidad-pag .titulo {
+    text-align: left;
+    text-transform: capitalize;
 }
