@@ -10,6 +10,7 @@
     --text-azul: #005f68;
     --text-oscuro: #242424;
     --text-claro: #444444;
+    --text-naranja:#fb8500;
 
     /* Resoluciones */
     --telefono: 480px;
@@ -47,17 +48,17 @@ h1,h2,h3 {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 3.5rem;
 }
 h2 {
-    font-size: 3.8rem;
+    font-size: 3rem;
 }
 h3 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 a {
@@ -222,7 +223,7 @@ img {
 }
 .especialidades h2 {
     text-transform: uppercase;
-    color: var(--text-azul);
+    color: var(--text-naranja);
 }
 .especialidades .btn-contenedor {
     margin-top: 1rem;
@@ -271,7 +272,8 @@ img {
 }
 
 .especialidad .info-especialidad .titulo {
-    color: var(--naranja);
+    /* color: limegreen; */
+    color: mediumseagreen;
     text-transform: uppercase;
 }
 
@@ -421,38 +423,48 @@ img {
 }
 
 .cedes-contenido {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+
 }
 
-@media (min-width: 768px) {
-    .cedes-contenido {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
-    }
-}
-
-.cede h3 {
-    color: var(--naranja);
-}
-
-.cede p {
-    /* color: var(--text-claro); */
-}
-
-.cede .mapa-contenedor {
+.lista-cedes {
     display: block;
-    width: 80%  ;
-    margin: auto;
-    margin-top: 2rem;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.316);
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: .5rem;
+    background-color: var(--principal);
+    color: var(--claro);
+    text-align: center;
+}
+.lista-cedes option{
+    color: var(--claro);
+    text-align: center;
 }
 
-.cede .mapa-contenedor iframe {
+.cedes-contenido .mapa-contenedor {
+    display: block;
+    max-width: 90rem  ;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.452);
+    margin-bottom: 2rem;
+}
+
+.cedes-contenido .mapa-contenedor iframe {
     width: 100%;
+}
+.cedes .info {
+    text-align: center;
+}
+.cedes .info .dias {
+    color: var(--naranja);
+    font-weight: 700    ;
+}
+.cedes .info .horario {
+    color: var(--text-claro)
 }
 
 /* contactanos */
