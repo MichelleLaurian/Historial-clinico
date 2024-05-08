@@ -1,3 +1,4 @@
+/* Globales */
 :root {
     --principal: #023047;
     --secundario: #219ebc;
@@ -10,7 +11,7 @@
     --text-azul: #005f68;
     --text-oscuro: #242424;
     --text-claro: #444444;
-    --text-naranja:#fb8500;
+    --text-naranja: #fb8500;
 
     /* Resoluciones */
     --telefono: 480px;
@@ -87,6 +88,12 @@ img {
 }
 
 /* UTILIDADES */
+
+.main {
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -130,6 +137,9 @@ img {
     border: none;
 }
 
+/* ///////////////////////////////////////////////
+        CODIGO LUCAS 
+////////////////////////////////////////////////*/
 /* HEADER */
 .header {
     background: linear-gradient(180deg, #023047, #023047de);
@@ -227,14 +237,6 @@ img {
     font-weight: 700;
     color: var(--principal);
     /* text-align: center; */
-}
-
-
-
-/* MAIN */
-.main {
-    padding: 1rem 2rem;
-    background-color: white;
 }
 
 /* ESPECIALIDADES */
@@ -401,14 +403,15 @@ img {
     color: var(--claro);
     text-align: center;
 }
-.lista-cedes option{
+
+.lista-cedes option {
     color: var(--claro);
     text-align: center;
 }
 
 .cedes-contenido .mapa-contenedor {
     display: block;
-    max-width: 90rem  ;
+    max-width: 90rem;
     margin: auto;
     margin-top: 5rem;
     overflow: hidden;
@@ -419,32 +422,38 @@ img {
 .cedes-contenido .mapa-contenedor iframe {
     width: 100%;
 }
+
 .cedes .info {
     text-align: center;
 }
+
 .cedes .info .dias {
     color: var(--naranja);
-    font-weight: 700    ;
+    font-weight: 700;
 }
+
 .cedes .info .horario {
     color: var(--text-claro)
 }
 
 /* contactanos */
-.contacto{
+.contacto {
     width: 50%;
-    padding: 30px 0 ;
+    padding: 30px 0;
     margin: auto;
 }
-.contacto form{
+
+.contacto form {
     display: flex;
     flex-direction: column;
 }
 
-.contacto input, button, textarea{
+.contacto input,
+button,
+textarea {
     margin: 5px 0;
     padding: 15px;
-    border-radius:  6px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: medium;
     width: 100%;
@@ -452,42 +461,53 @@ img {
 
 
 /* noticias home*/
-.noticias h2{
+.noticias h2 {
     color: var(--text-naranja);
     text-transform: uppercase;
 }
+
 .noticia {
     border-radius: .5rem;
     overflow: hidden;
     margin-bottom: 4rem;
 }
+
 .noticia:last-of-type {
     margin-bottom: 0;
 }
+
 @media (min-width: 1200px) {
     .noticia {
         display: grid;
         grid-template-columns: 1fr 3fr;
         gap: 2rem;
-    };    
+    }
+
+    ;
 }
+
 .noticia .box-img {
     margin-bottom: 2rem;
 }
+
 .noticia .box-img img {
     box-shadow: 0 0 5px black;
 }
+
 .noticia .info {
     padding: 1rem;
 }
+
 @media (min-width: 1200px) {
     .noticia .info {
         padding: 0;
-    }   
+    }
 }
+
 .noticia .info .titulo {
     text-align: left;
 }
+
 .noticia .info .fecha {
     color: var(--naranja);
     font-weight: 700;
@@ -502,6 +522,7 @@ img {
         gap: 2rem;
     }
 }
+
 .especialidades-pag h2 {
     color: var(--text-naranja);
     text-transform: uppercase;
@@ -510,6 +531,7 @@ img {
 .especialidad-pag {
     margin-bottom: 4rem;
 }
+
 @media (min-width: 768px) {
     .especialidad-pag {
         display: grid;
@@ -522,6 +544,7 @@ img {
 .especialidad-pag .img-contenedor {
     margin-bottom: 1rem;
 }
+
 .especialidad-pag .img-contenedor img {
     box-shadow: 0 0 5px black;
 }
@@ -529,4 +552,95 @@ img {
 .especialidad-pag .titulo {
     text-align: left;
     text-transform: capitalize;
+}
+
+/* ///////////////////////////////////////////////
+        CODIGO MICHELLE
+////////////////////////////////////////////////*/
+/* contactanos */
+.contacto {
+    width: 50%;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto input,
+button,
+textarea {
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+}
+
+/* sign in */
+
+.form-signin {
+    display: flex;
+    height: 100%;
+}
+
+.form-signin h3 {
+    color: var(--text-oscuro)
+}
+
+.form-signin form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+.form-signin input,
+button {
+    padding: 15px 15px 15px 35px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.form-signin button {
+    background-color: var(--principal);
+    color: var(--claro);
+}
+
+/* paciente */
+.form-pacient {
+    width: 50%;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.form-pacient form {
+    /* margin: 30px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-pacient fieldset {
+    border: none;
+}
+
+.data-os {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pacient input,
+button {
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
 }
