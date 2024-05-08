@@ -21,11 +21,14 @@
     --fuente-principal: "Montserrat", sans-serif;
 }
 
-*,*::before, *::after {
-    margin: 0;  
+*,
+*::before,
+*::after {
+    margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -39,7 +42,9 @@ body {
     background-color: lightcyan;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     text-align: center;
     padding: 0;
     margin: 0;
@@ -50,9 +55,11 @@ h1,h2,h3 {
 h1 {
     font-size: 3.5rem;
 }
+
 h2 {
     font-size: 3rem;
 }
+
 h3 {
     font-size: 2.5rem;
 }
@@ -66,7 +73,8 @@ a {
     text-align: center;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -83,7 +91,8 @@ img {
     max-width: 120rem;
     margin: 0 auto;
 }
-.sombra{
+
+.sombra {
     box-shadow: 0 2px .5rem rgba(0, 0, 0, 0.5);
 }
 
@@ -96,6 +105,7 @@ img {
     font-weight: 700;
     text-align: center;
 }
+
 .boton:hover {
     background-color: var(--secundario);
 }
@@ -105,33 +115,35 @@ img {
     justify-content: right;
 }
 
-.main > section {
+.main>section {
     margin-top: 5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.283);
 
 }
 
-.main > section:first-child {
+.main>section:first-child {
     margin-top: 2rem;
 }
 
-.main > section:last-child {
+.main>section:last-child {
     margin-bottom: 2rem;
     border: none;
 }
 
 /* HEADER */
 .header {
-    background: linear-gradient(180deg,#023047, #023047de);
+    background: linear-gradient(180deg, #023047, #023047de);
     border-bottom: 1px solid rgba(0, 0, 0, 0.281);
 }
+
 .header-contenido {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media (min-width:1200px){
+
+@media (min-width:1200px) {
     .header-contenido {
         /* justify-content: space-between;
         align-items: center; */
@@ -140,6 +152,7 @@ img {
     }
 
 }
+
 .header-contenido .logo {
     width: 10rem;
     border-radius: 2rem;
@@ -151,11 +164,13 @@ img {
     align-items: center;
     margin-top: 2rem;
 }
+
 @media (min-width: 768px) {
     .nav-principal {
         flex-direction: row;
     }
 }
+
 @media (min-width: 1200px) {
     .nav-principal {
         margin: 0;
@@ -169,6 +184,7 @@ img {
     font-size: 1.5rem;
     padding: 1rem;
 }
+
 .nav-principal a:hover {
     background-color: var(--naranja);
     border-radius: .5rem;
@@ -193,9 +209,10 @@ img {
     gap: 2rem;
     padding: 2rem;
 }
+
 @media (min-width: 768px) {
     .banner-contenido {
-        padding:7rem;
+        padding: 7rem;
     }
 }
 
@@ -221,11 +238,15 @@ img {
 }
 
 /* ESPECIALIDADES */
+.especialidades {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.086);
+}
 
 .especialidades h2 {
     text-transform: uppercase;
     color: var(--text-naranja);
 }
+
 .especialidades .btn-contenedor {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -245,6 +266,7 @@ img {
     background-color: rgba(248, 248, 255, 0.546);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.226);
 }
+
 .especialidad:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }
@@ -260,6 +282,7 @@ img {
     object-position: center;
     transition: .5s 0s ease-out;
 }
+
 .especialidad:hover .img-contenedor img {
     transform: scale(1.05);
 }
@@ -281,11 +304,10 @@ img {
 .especialidad .boton {
     background-color: var(--principal);
 }
+
 .especialidad .boton:hover {
     background-color: var(--secundario);
 }
-
-
 
 /* FOOTER */
 
@@ -303,12 +325,13 @@ img {
     display: grid;
     justify-items: center;
 }
+
 @media (min-width: 480px) {
     .footer .items {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-  
+
 }
 
 @media (min-width: 1200px) {
@@ -320,11 +343,13 @@ img {
 .footer .items .item {
     margin-bottom: 4rem;
 }
+
 @media (min-width: 480px) {
     .footer .items .item {
         margin: 0;
     }
 }
+
 .footer .items h3 {
     text-align: left;
     color: darkturquoise;
@@ -357,65 +382,6 @@ img {
     margin-top: 3rem;
     max-width: 120rem;
 }
-
-/* sign in */
-
-.form-signin{
-    display: flex;
-    height: 100%;
-   
-}
-.form-signin h3{
-    color: var(--text-oscuro)
-}
-.form-signin form {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
-}
-.form-signin input, button{
-    padding: 15px 15px 15px 35px;
-    margin: 5px;
-    border-radius:  6px;
-    cursor: pointer;
-    font-size: medium;
-    
-}
-.form-signin button{
-    background-color: var(--principal);
-    color: var(--claro);
-}
-
-/* paciente */
-.form-pacient{
-    width: 50%;
-    padding: 30px 0 ;
-    margin: auto;
-    
-}
-.form-pacient form{
-    /* margin: 30px 0; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.form-pacient fieldset{
-    border:none;
-}
-.data-os{
-    display: flex;
-    flex-direction: column;
-}
-.form-pacient input, button{
-    margin: 5px 0;
-    padding: 15px;
-    border-radius:  6px;
-    cursor: pointer;
-    font-size: medium;
-    width: 100%;
-}
-
 
 /* Pag Cedes */
 
