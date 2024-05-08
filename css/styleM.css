@@ -1,75 +1,89 @@
 /* contactanos */
-.contacto{
+.contacto {
   width: 50%;
-  padding: 30px 0 ;
+  padding: 30px 0;
   margin: auto;
 }
-.contacto form{
+
+.contacto form {
   display: flex;
   flex-direction: column;
 }
 
-.contacto input, button, textarea{
+.contacto input,
+button,
+textarea {
   margin: 5px 0;
   padding: 15px;
-  border-radius:  6px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: medium;
   width: 100%;
 }
+
 /* sign in */
 
-.form-signin{
+.form-signin {
   display: flex;
   height: 100%;
- 
+
 }
-.form-signin h3{
+
+.form-signin h3 {
   color: var(--text-oscuro)
 }
+
 .form-signin form {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 50%;
 }
-.form-signin input, button{
+
+.form-signin input,
+button {
   padding: 15px 15px 15px 35px;
   margin: 5px;
-  border-radius:  6px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: medium;
-  
+
 }
-.form-signin button{
+
+.form-signin button {
   background-color: var(--principal);
   color: var(--claro);
 }
 
 /* paciente */
-.form-pacient{
+.form-pacient {
   width: 50%;
-  padding: 30px 0 ;
+  padding: 30px 0;
   margin: auto;
-  
+
 }
-.form-pacient form{
+
+.form-pacient form {
   /* margin: 30px 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.form-pacient fieldset{
-  border:none;
+
+.form-pacient fieldset {
+  border: none;
 }
-.data-os{
+
+.data-os {
   display: flex;
   flex-direction: column;
 }
-.form-pacient input, button{
+
+.form-pacient input,
+button {
   margin: 5px 0;
   padding: 15px;
-  border-radius:  6px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: medium;
   width: 100%;
