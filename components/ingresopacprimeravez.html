@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalizer.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/styleM.css">
 
 </head>
 <body>
@@ -26,20 +25,25 @@
       </nav>
     </div>
   </header>
-  <main>
-    <section class="form-pacient">
+  <main class="main contenedor sombra">
+    <section class="form-pacient form">
+      <h3>Ingreso Paciente primera vez</h3>
       <form>
         <fieldset>
           <legend>Información del paciente</legend>
-          <div>
+     
+            <section>
             <input type="text" name="name" id="name" placeholder="Nombre">
             <input type="text" name="surname" id="surname" placeholder="Apellido">
             <input type="number" name="dni" id="dni" placeholder="DNI">
             <input type="number" name="phone" id="phone" placeholder="Celular">
             <input type="text" name="diagnosis" id="diagnosis" placeholder="Diagnostico">
-            <section></section>
+            
+           <section class="data-os">
             <label for="birthday">Fecha de nacimiento</label>
             <input type="date" name="birthday" id="birthday">
+           
+           </section>
             <section class="data-os">
               <label for="oss">Obra social</label>
               <input list="os" id="oss" name="oss" />
@@ -56,7 +60,6 @@
               <input type="file" name="pictures" id="pictures" placeholder="Foto del paciente">
             </section>
 
-          </div>
         </fieldset>
         <fieldset>
           <legend>Dirección</legend>
@@ -66,7 +69,7 @@
             <input type="number" name="phoneExtra" id="phoneExtra" placeholder="Contacto de un familiar">
           </div>
         </fieldset>
-        <button>Enviar</button>
+        <button class="boton">Enviar</button>
       </form>
     </section>
   </main>
