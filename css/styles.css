@@ -137,6 +137,21 @@ img {
     border: none;
 }
 
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.form input{
+    margin: 0.6rem  0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+}
+
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
 ////////////////////////////////////////////////*/
@@ -557,90 +572,18 @@ textarea {
 /* ///////////////////////////////////////////////
         CODIGO MICHELLE
 ////////////////////////////////////////////////*/
-/* contactanos */
-.contacto {
-    width: 50%;
-    padding: 30px 0;
-    margin: auto;
-}
+/*Sing In */
 
-.contacto form {
-    display: flex;
-    flex-direction: column;
-}
 
-.contacto input,
-button,
-textarea {
-    margin: 5px 0;
-    padding: 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: medium;
-    width: 100%;
-}
-
-/* sign in */
-
-.form-signin {
-    display: flex;
-    height: 100%;
-}
-
-.form-signin h3 {
-    color: var(--text-oscuro)
-}
-
-.form-signin form {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
-}
-
-.form-signin input,
-button {
-    padding: 15px 15px 15px 35px;
-    margin: 5px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: medium;
-}
-
-.form-signin button {
-    background-color: var(--principal);
-    color: var(--claro);
-}
-
-/* paciente */
-.form-pacient {
-    width: 50%;
-    padding: 30px 0;
-    margin: auto;
-}
-
-.form-pacient form {
-    /* margin: 30px 0; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
+/* ingreso Paciente */
 .form-pacient fieldset {
     border: none;
 }
-
+.form-pacient fieldset input{
+    width: 100%;
+}
 .data-os {
     display: flex;
     flex-direction: column;
 }
 
-.form-pacient input,
-button {
-    margin: 5px 0;
-    padding: 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: medium;
-    width: 100%;
-}
