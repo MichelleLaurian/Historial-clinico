@@ -142,6 +142,17 @@ img {
     border: none;
 }
 
+fieldset {
+    border: none;
+}
+
+input {
+    margin: 0.6rem 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
 ////////////////////////////////////////////////*/
@@ -451,7 +462,7 @@ img {
 @media (min-width: 1200px) {
     .noticias-contenido {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;      
+        gap: 2rem;
     }
 }
 
@@ -502,6 +513,7 @@ img {
     .noticia .box-img {
         margin-bottom: 2rem;
     }
+
     .noticia .info {
         padding: 1rem;
     }
@@ -560,54 +572,65 @@ img {
 /* ///////////////////////////////////////////////
         CODIGO MICHELLE
 ////////////////////////////////////////////////*/
+
 /*contacto */
-.form form{
+form {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
+
+fieldset section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.field2 section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
 @media (min-width: 1200px) {
-    .form form{
+    form {
         width: 75%;
-    } 
+    }
 }
 
 @media (min-width: 768px) {
-    .form form{
+    form {
         width: 80%;
     }
 }
+
 @media (min-width: 480px) {
-   .form {
-    width: 100%;
-   }
+    .form {
+        width: 100%;
+    }
 }
 
-.form input{
-    margin: 0.6rem  0;
-    padding: 1.5rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    
-}
-
-.form textarea{
+textarea {
     margin: 0.6rem 0;
-    padding: 0.6rem ;
+    padding: 0.6rem;
     border-radius: 0.6rem;
+}
+
+input[type="file"] {
+    display: none;
+
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 0.7rem;
+    cursor: pointer;
 
 }
 
 /* ingreso Paciente */
-.form-pacient fieldset {
-    border: none;
-}
-.form-pacient fieldset input{
-    width: 100%;
-}
 .data-os {
     display: flex;
     flex-direction: column;
 }
-
-
