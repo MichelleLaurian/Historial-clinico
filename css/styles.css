@@ -142,21 +142,6 @@ img {
     border: none;
 }
 
-.form form{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin: auto;
-}
-
-.form input{
-    margin: 0.6rem  0;
-    padding: 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: medium;
-}
-
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
 ////////////////////////////////////////////////*/
@@ -575,8 +560,43 @@ img {
 /* ///////////////////////////////////////////////
         CODIGO MICHELLE
 ////////////////////////////////////////////////*/
-/*Sing In */
+/*contacto */
+.form form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+@media (min-width: 1200px) {
+    .form form{
+        width: 75%;
+    } 
+}
 
+@media (min-width: 768px) {
+    .form form{
+        width: 80%;
+    }
+}
+@media (min-width: 480px) {
+   .form {
+    width: 100%;
+   }
+}
+
+.form input{
+    margin: 0.6rem  0;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    
+}
+
+.form textarea{
+    margin: 0.6rem 0;
+    padding: 0.6rem ;
+    border-radius: 0.6rem;
+
+}
 
 /* ingreso Paciente */
 .form-pacient fieldset {
@@ -590,27 +610,4 @@ img {
     flex-direction: column;
 }
 
-
-/* contactanos */
-.contacto {
-    width: 50%;
-    padding: 30px 0;
-    margin: auto;
-}
-
-.contacto form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contacto input,
-button,
-textarea {
-    margin: 5px 0;
-    padding: 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: medium;
-    width: 100%;
-}
 
