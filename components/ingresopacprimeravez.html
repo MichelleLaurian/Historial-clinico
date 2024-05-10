@@ -38,12 +38,10 @@
             <input type="number" name="dni" id="dni" placeholder="DNI">
             <input type="number" name="phone" id="phone" placeholder="Celular">
             <input type="text" name="diagnosis" id="diagnosis" placeholder="Diagnostico">
-            
-           <section class="data-os">
+           <div class="data-os">
             <label for="birthday">Fecha de nacimiento</label>
             <input type="date" name="birthday" id="birthday">
-           
-           </section>
+           </div>
             <section class="data-os">
               <label for="oss">Obra social</label>
               <input list="os" id="oss" name="oss" />
@@ -55,19 +53,19 @@
                 <option value="No tiene">No tiene</option>
               </datalist>
             </section>
-            <section>
+            <div>
               <label for="pictures">Foto del paciente</label>
               <input type="file" name="pictures" id="pictures" placeholder="Foto del paciente">
-            </section>
+            </div>
 
         </fieldset>
         <fieldset>
           <legend>Dirección</legend>
-          <div>
+          <section>
             <input type="text" name="direction" id="direction" placeholder="Calle 123">
             <input type="text" name="location" id="location" placeholder="Provincia">
             <input type="number" name="phoneExtra" id="phoneExtra" placeholder="Contacto de un familiar">
-          </div>
+          </section>
         </fieldset>
         <button class="boton">Enviar</button>
       </form>
