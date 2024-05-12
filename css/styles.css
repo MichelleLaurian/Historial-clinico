@@ -12,6 +12,7 @@
     --text-oscuro: #242424;
     --text-claro: #444444;
     --text-naranja: #fb8500;
+    --text-rojo: rgb(150, 15, 15);
 
     /* Resoluciones */
     --telefono: 480px;
@@ -153,6 +154,9 @@ input {
     cursor: pointer;
 }
 
+.errorMessage{
+    color: var(--text-rojo);
+}
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
 ////////////////////////////////////////////////*/
@@ -628,7 +632,10 @@ input[type="file"] {
     cursor: pointer;
 
 }
-
+/* sign in */
+.form-signin-page form{
+    height: 50vh;
+    }
 /* ingreso Paciente */
 .data-os {
     display: flex;
