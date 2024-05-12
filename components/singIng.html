@@ -27,11 +27,21 @@
     </div>
   </header>
   <main class="main contenedor sombra ">
-    <section class="form-signin-page form">
+    <section class="form-signin-page">
       <form>
         <h3>Sign In</h3>
-        <input type="email" name="email" id="email" placeholder="juanperez@gmail.com">
-        <input type="password" name="password" id="password" placeholder="contraseña1234@">
+        <input 
+          type="text" 
+          name="user" 
+          id="user" 
+          placeholder="Admin">
+        <input 
+          type="password" 
+          name="passUser" 
+          id="passUser" 
+          placeholder="Admin">
+          
+          <div class="errorMessage"></div>
         <button class="boton">Ingresar</button>
       </form>
     </section>
@@ -215,4 +225,7 @@
       © 2024 Sanatorio Plus. Todos los derechos reservados.
     </div>
   </footer>
+  
 </body>
+<script src="/script/validacionSignIn.js"></script>
+</html>
