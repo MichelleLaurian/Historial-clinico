@@ -7,13 +7,13 @@ const asunto = document.querySelector('#asunto')
 const description = document.querySelector('#description')
 const fileUpload = document.querySelector('#file-upload')
 
-const errorMessageName = document.querySelector('.errorMessageName')
-const errorMessageMail = document.querySelector('.errorMessageMail')
+const errorMessageName = document.querySelector('#errorMessageName')
+const errorMessageMail = document.querySelector('#errorMessageMail')
 
-const errorMessagePhone = document.querySelector('.errorMessagePhone')
-const errorMessageAsunto = document.querySelector('.errorMessageAsunto')
-const errorMessageComent = document.querySelector('.errorMessageComent')
-const errorMessagefile = document.querySelector('.errorMessagefile')
+const errorMessagePhone = document.querySelector('#errorMessagePhone')
+const errorMessageAsunto = document.querySelector('#errorMessageAsunto')
+const errorMessageComent = document.querySelector('#errorMessageComent')
+const errorMessagefile = document.querySelector('#errorMessagefile')
 
 function timer(errorV) {
   setTimeout(() => {
