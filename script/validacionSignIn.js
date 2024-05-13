@@ -14,9 +14,9 @@ function validacionSingIn(e) {
   )
   console.log(JSON.stringify(data))
 
-  if (!userSingIn.value === 'Admin' || userSingIn.value === '') {
+  if (!userSingIn.value === 'Admin' || userSingIn.length<4) {
     errorMessage.textContent = 'El usuario es necesario'
-  } else if (!passSingIn.value === 'Admin' || passSingIn.value === '') {
+  } else if (!passSingIn.value === 'Admin' || passSingIn.length<4) {
     errorMessage.textContent = 'La contraseña es necesaria.'
     
   }
@@ -24,4 +24,3 @@ function validacionSingIn(e) {
   window.location.href = '/index.html'
 
 }
-
