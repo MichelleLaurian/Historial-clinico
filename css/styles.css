@@ -156,6 +156,8 @@ input {
 
 .errorMessage{
     color: var(--text-rojo);
+    margin: 0.5rem 0;
+    font-weight: 500;
 }
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
@@ -646,17 +648,18 @@ textarea {
     border-radius: 0.6rem;
 }
 
-input[type="file"] {
+    
+/* input[type="file"] {
     display: none;
 
-}
+} */
 
-.custom-file-upload {
+/* .custom-file-upload {
     display: inline-block;
     padding: 0.7rem;
     cursor: pointer;
 
-}
+} */
 /* sign in */
 .form-signin-page form{
     height: 50vh;

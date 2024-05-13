@@ -19,9 +19,9 @@
       <img src="/img/logo.png" alt="logo" class="logo">
       <nav class="nav-principal">
         <a href="/index.html">Inicio</a>
-        <a href="/components/quienes_somos.html">Quienes Somos</a>
-        <a href="/components/especilidades_medicas.html">Especialidades</a>
-        <a href="/components/centros_de_atencion.html">Centros de Atencion</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Especialidades</a>
+        <a href="/components/cede_info_ubicacion.html">Centros de Atencion</a>
         <a href="/components/contactanos.html">Contacto</a>
         <a href="/components/singIng.html">Sign In</a>
       </nav>
@@ -33,37 +33,80 @@
         <h3>Contáctanos</h3>
         <fieldset class="field1">
           <section>
-            <input type="text" name="name" id="name" placeholder="Juan Alberto">
-            <div class="errorMessage"></div>
-            <input type="email" name="email" id="email" placeholder="juan@alberto.com">
-            <div class="errorMessage"></div>
-            <input type="number" name="phoneC" id="phoneC" placeholder="1123456789">
-            <div class="errorMessage"></div>
+            <input 
+              type="text" 
+              name="name" 
+              id="name" 
+              placeholder="Juan Alberto Pereira">
+        <div class="errorMessage errorMessageName"></div>
+            
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              placeholder="juan@alberto.com">
+        <div class="errorMessage errorMessageMail"></div>
+            
+            <input 
+              type="number" 
+              name="phone" 
+              id="phone" 
+              placeholder="1123456789">
+        <div class="errorMessage errorMessagePhone"></div>
+            
           </section>
         </fieldset>
         <fieldset class="field2">
           <legend>¿Cómo te contactanos? </legend>
           <section>
-            <label for="phone">Celular</label>
-            <input type="checkbox" name="phone" id="phone">
-            <label for="emailContact">E-mail</label>
-            <input type="checkbox" name="emailContact" id="emailContact">
-            <div class="errorMessage"></div>
+            <label for="phoneForContact">Celular</label>
+            <input 
+              type="checkbox" 
+              name="phoneForContact" 
+              id="phoneForContact" 
+              value="phoneForContact">
+            <label for="emailForContact"
+            >E-mail</label>
+            <input 
+              type="checkbox" 
+              name="emailForContact" 
+              id="emailForContact" 
+              value="emailForContact"
+              checked>         
           </section>
         </fieldset>
         <fieldset class="field3">
           <section>
-            <input type="text" name="asunto" id="asunto" placeholder="Asunto : Consulta de servicio">
-            <textarea name="description" id="description" cols="30" rows="10" placeholder="Comentario ..."></textarea>
+            <input 
+              type="text" 
+              name="asunto" 
+              id="asunto" 
+              placeholder="Asunto : Consulta de servicio">
+        <div class="errorMessage errorMessageAsunto"></div>
+
+            <textarea 
+              name="description" 
+              id="description" 
+              cols="30" 
+              rows="10" 
+              placeholder="Comentario ..."></textarea>
+        <div class="errorMessage errorMessageComent"></div>
+
           </section>
         </fieldset>
         <fieldset class="flied4">
           <legend>Unete a nuestro equipo </legend>
           <section>
-            <label for="file-upload" class="custom-file-upload boton">
+            <!-- <label 
+            for="file-upload" 
+            class="custom-file-upload">
               Adjuntar archivo
-            </label>
-            <input id="file-upload" type="file" />
+            </label> -->
+            <input 
+              id="file-upload" 
+              type="file" />
+        <div class="errorMessage errorMessagefile"></div>
+
           </section>
         </fieldset>
         <button class="boton">Enviar</button>
@@ -249,4 +292,6 @@
     </div>
   </footer>
 </body>
+<script src="/script/validacionesContacto.js"></script>
+
 </html>
