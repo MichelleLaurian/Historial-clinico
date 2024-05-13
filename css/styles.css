@@ -220,9 +220,84 @@ input {
     border-radius: .5rem;
 }
 
+/* FOOTER */
+
+.footer {
+    background-color: var(--principal);
+    padding: 3rem;
+    color: var(--claro);
+
+}
+
+.footer .items {
+    max-width: 120rem;
+    margin: 0 auto;
+
+    display: grid;
+    justify-items: center;
+}
+
+@media (min-width: 480px) {
+    .footer .items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .footer .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.footer .items .item {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 480px) {
+    .footer .items .item {
+        margin: 0;
+    }
+}
+
+.footer .items h3 {
+    text-align: left;
+    color: darkturquoise;
+}
+
+.footer .items svg {
+    stroke: white
+}
+
+.footer .redes-sociales .redes {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer .ubicacion .cedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .contacto .medios {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .copy {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 120rem;
+}
+
+/* == PAGINA HOME  */
+
 /* BANNER */
 .banner {
-    background: url("../img/banner-pricipal.jpg");
+    background: url("/img/banner-pricipal.jpg");
     height: 45rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -326,130 +401,6 @@ input {
     background-color: var(--secundario);
 }
 
-/* FOOTER */
-
-.footer {
-    background-color: var(--principal);
-    padding: 3rem;
-    color: var(--claro);
-
-}
-
-.footer .items {
-    max-width: 120rem;
-    margin: 0 auto;
-
-    display: grid;
-    justify-items: center;
-}
-
-@media (min-width: 480px) {
-    .footer .items {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .footer .items {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.footer .items .item {
-    margin-bottom: 4rem;
-}
-
-@media (min-width: 480px) {
-    .footer .items .item {
-        margin: 0;
-    }
-}
-
-.footer .items h3 {
-    text-align: left;
-    color: darkturquoise;
-}
-
-.footer .items svg {
-    stroke: white
-}
-
-.footer .redes-sociales .redes {
-    display: flex;
-    gap: 3rem;
-}
-
-.footer .ubicacion .cedes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer .contacto .medios {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer .copy {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 3rem;
-    max-width: 120rem;
-}
-
-/* Pag Cedes */
-
-.cedes h2 {
-    text-transform: uppercase;
-}
-
-.lista-cedes {
-    display: block;
-    max-width: 30rem;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid black;
-    box-shadow: none;
-    border-radius: .5rem;
-    background-color: var(--principal);
-    color: var(--claro);
-    text-align: center;
-}
-
-.lista-cedes option {
-    color: var(--claro);
-    text-align: center;
-}
-
-.cedes-contenido .mapa-contenedor {
-    display: block;
-    max-width: 90rem;
-    margin: auto;
-    margin-top: 5rem;
-    overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.452);
-    margin-bottom: 2rem;
-}
-
-.cedes-contenido .mapa-contenedor iframe {
-    width: 100%;
-}
-
-.cedes .info {
-    text-align: center;
-}
-
-.cedes .info .dias {
-    color: var(--naranja);
-    font-weight: 700;
-}
-
-.cedes .info .horario {
-    color: var(--text-claro)
-}
-
 /* noticias home*/
 .noticias h2 {
     color: var(--text-naranja);
@@ -532,7 +483,9 @@ input {
     font-weight: 700;
 }
 
-/* Pagina Noticias */
+
+
+/* ESPECIALIDADES HOME */
 
 @media (min-width: 1200px) {
     .especialidades-pag-contenido {
@@ -571,6 +524,78 @@ input {
 .especialidad-pag .titulo {
     text-align: left;
     text-transform: capitalize;
+}
+
+/* == PAGINA QUIENES SOMOS */
+
+.quienes-somos h2 {
+    text-transform: uppercase;
+    color: var(--text-naranja)
+}
+
+.contenido-quienes-somos img {
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .contenido-quienes-somos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* == PAGINA CENTROS MEDICOS */
+
+.cedes h2 {
+    text-transform: uppercase;
+}
+
+.lista-cedes {
+    display: block;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: .5rem;
+    background-color: var(--principal);
+    color: var(--claro);
+    text-align: center;
+}
+
+.lista-cedes option {
+    color: var(--claro);
+    text-align: center;
+}
+
+.cedes-contenido .mapa-contenedor {
+    display: block;
+    max-width: 90rem;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.452);
+    margin-bottom: 2rem;
+}
+
+.cedes-contenido .mapa-contenedor iframe {
+    width: 100%;
+}
+
+.cedes .info {
+    text-align: center;
+}
+
+.cedes .info .dias {
+    color: var(--naranja);
+    font-weight: 700;
+}
+
+.cedes .info .horario {
+    color: var(--text-claro)
 }
 
 /* ///////////////////////////////////////////////
