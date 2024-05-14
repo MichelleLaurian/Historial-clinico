@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -33,64 +33,33 @@
         <h3>Contáctanos</h3>
         <fieldset class="field1">
           <section>
-            <input 
-              type="text" 
-              name="name" 
-              id="name" 
-              placeholder="Juan Alberto Pereira">
-        <div class="errorMessage " id="errorMessageName"></div>
-            
-            <input 
-              type="email" 
-              name="email" 
-              id="email" 
-              placeholder="juan@alberto.com">
-        <div class="errorMessage " id="errorMessageMail"></div>
-            
-            <input 
-              type="number" 
-              name="phone" 
-              id="phone" 
-              placeholder="1123456789">
-        <div class="errorMessage " id="errorMessagePhone"></div>
-            
+            <input type="text" name="name" id="name" placeholder="Juan Alberto Pereira">
+            <div class="errorMessage " id="errorMessageName"></div>
+
+            <input type="email" name="email" id="email" placeholder="juan@alberto.com">
+            <div class="errorMessage " id="errorMessageMail"></div>
+
+            <input type="number" name="phone" id="phone" placeholder="1123456789">
+            <div class="errorMessage " id="errorMessagePhone"></div>
+
           </section>
         </fieldset>
         <fieldset class="field2">
           <legend>¿Cómo te contactanos? </legend>
           <section>
             <label for="phoneForContact">Celular</label>
-            <input 
-              type="checkbox" 
-              name="phoneForContact" 
-              id="phoneForContact" 
-              value="phoneForContact">
-            <label for="emailForContact"
-            >E-mail</label>
-            <input 
-              type="checkbox" 
-              name="emailForContact" 
-              id="emailForContact" 
-              value="emailForContact"
-              checked>         
+            <input type="checkbox" name="phoneForContact" id="phoneForContact" value="phoneForContact">
+            <label for="emailForContact">E-mail</label>
+            <input type="checkbox" name="emailForContact" id="emailForContact" value="emailForContact" checked>
           </section>
         </fieldset>
         <fieldset class="field3">
           <section>
-            <input 
-              type="text" 
-              name="asunto" 
-              id="asunto" 
-              placeholder="Asunto : Consulta de servicio">
-        <div class="errorMessage " id="errorMessageAsunto"></div>
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto : Consulta de servicio">
+            <div class="errorMessage " id="errorMessageAsunto"></div>
 
-            <textarea 
-              name="description" 
-              id="description" 
-              cols="30" 
-              rows="10" 
-              placeholder="Comentario ..."></textarea>
-        <div class="errorMessage " id="errorMessageComent"></div>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Comentario ..."></textarea>
+            <div class="errorMessage " id="errorMessageComent"></div>
 
           </section>
         </fieldset>
@@ -102,14 +71,12 @@
             class="custom-file-upload">
               Adjuntar archivo
             </label> -->
-            <input 
-              id="file-upload" 
-              type="file" />
-        <div class="errorMessage " id="errorMessagefile"></div>
+            <input id="file-upload" type="file" />
+            <div class="errorMessage " id="errorMessagefile"></div>
 
           </section>
         </fieldset>
-      <div class="successForm" id="successForm"></div>
+        <div class="successForm" id="successForm"></div>
         <button class="boton">Enviar</button>
       </form>
 
