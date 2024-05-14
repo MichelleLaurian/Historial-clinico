@@ -1,0 +1,661 @@
+/* Globales */
+:root {
+    --principal: #023047;
+    --secundario: #219ebc;
+    --secundario2: #8ecae6;
+    --amarillo: #ffb703;
+    --naranja: #fb8500;
+    --claro: #fff;
+    --oscuro: #0D0D0D;
+
+    --text-azul: #005f68;
+    --text-oscuro: #242424;
+    --text-claro: #444444;
+    --text-naranja: #fb8500;
+    --text-rojo: rgb(150, 15, 15);
+
+    /* Resoluciones */
+    --telefono: 480px;
+    --tablet: 768px;
+    --desktop: 1200px;
+
+    /* Fuentes */
+    --fuente-principal: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-azul);
+    background-color: lightcyan;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* UTILIDADES */
+
+.main {
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.sombra {
+    box-shadow: 0 1px .5rem rgba(0, 0, 0, 0.5);
+}
+
+.boton {
+    padding: 1rem 3rem;
+    background-color: var(--principal);
+    border-radius: 1rem;
+    border: none;
+    color: var(--claro);
+    font-weight: 700;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: var(--secundario);
+}
+
+.btn-contenedor {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.derecha {
+    display: flex;
+    justify-content: right;
+}
+
+.main>section {
+    margin-top: 5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.283);
+
+}
+
+.main>section:first-child {
+    margin-top: 2rem;
+}
+
+.main>section:last-child {
+    margin-bottom: 2rem;
+    border: none;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    margin: 0.6rem 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.errorMessage{
+    color: var(--text-rojo);
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.successForm{
+    color:var(--text-azul);
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+/* ///////////////////////////////////////////////
+        CODIGO LUCAS 
+////////////////////////////////////////////////*/
+/* HEADER */
+.header {
+    background: linear-gradient(180deg, #023047, #023047de);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.header-contenido {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:1200px) {
+    .header-contenido {
+        /* justify-content: space-between;
+        align-items: center; */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+.header-contenido .logo {
+    width: 10rem;
+    border-radius: 2rem;
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-principal {
+        margin: 0;
+    }
+}
+
+.nav-principal a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--claro);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.nav-principal a:hover {
+    background-color: var(--naranja);
+    border-radius: .5rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--principal);
+    padding: 3rem;
+    color: var(--claro);
+
+}
+
+.footer .items {
+    max-width: 120rem;
+    margin: 0 auto;
+
+    display: grid;
+    justify-items: center;
+}
+
+@media (min-width: 480px) {
+    .footer .items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .footer .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.footer .items .item {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 480px) {
+    .footer .items .item {
+        margin: 0;
+    }
+}
+
+.footer .items h3 {
+    text-align: left;
+    color: darkturquoise;
+}
+
+.footer .items svg {
+    stroke: white
+}
+
+.footer .redes-sociales .redes {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer .ubicacion .cedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .contacto .medios {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .copy {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 120rem;
+}
+
+/* == PAGINA HOME  */
+
+/* BANNER */
+.banner {
+    background: url("/img/banner-pricipal.jpg");
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.banner-contenido {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .banner-contenido {
+        padding: 7rem;
+    }
+}
+
+.banner-contenido h1 {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: var(--principal);
+    font-weight: 900;
+}
+
+.banner-contenido p {
+    text-shadow: 0 0 10px white;
+    font-weight: 700;
+    color: var(--principal);
+    /* text-align: center; */
+}
+
+/* ESPECIALIDADES */
+.especialidades {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.086);
+}
+
+.especialidades h2 {
+    text-transform: uppercase;
+    color: var(--text-naranja);
+}
+
+.especialidades-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.especialidad {
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    overflow: hidden;
+    background-color: rgba(248, 248, 255, 0.546);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.226);
+}
+
+.especialidad:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.especialidad .img-contenedor {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.especialidad .img-contenedor img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s 0s ease-out;
+}
+
+.especialidad:hover .img-contenedor img {
+    transform: scale(1.05);
+}
+
+.especialidad .info-especialidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.especialidad .info-especialidad .titulo {
+    /* color: limegreen; */
+    color: mediumseagreen;
+    text-transform: uppercase;
+}
+
+.especialidad .boton {
+    background-color: var(--principal);
+}
+
+.especialidad .boton:hover {
+    background-color: var(--secundario);
+}
+
+/* noticias home*/
+.noticias h2 {
+    color: var(--text-naranja);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .noticias-contenido {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .noticias-contenido {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.noticia {
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.noticia:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .noticia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .noticia {
+        grid-template-columns: 1fr;
+    }
+
+    ;
+}
+
+.noticia .box-img {
+    margin-bottom: 2rem;
+}
+
+.noticia .box-img img {
+    box-shadow: 0 0 5px black;
+}
+
+.noticia .info {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .noticia .box-img {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .noticia .box-img {
+        margin-bottom: 2rem;
+    }
+
+    .noticia .info {
+        padding: 1rem;
+    }
+}
+
+.noticia .info .titulo {
+    text-align: left;
+}
+
+.noticia .info .fecha {
+    color: var(--naranja);
+    font-weight: 700;
+}
+
+
+
+/* ESPECIALIDADES HOME */
+
+@media (min-width: 1200px) {
+    .especialidades-pag-contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.especialidades-pag h2 {
+    color: var(--text-naranja);
+    text-transform: uppercase;
+}
+
+.especialidad-pag {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .especialidad-pag {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.especialidad-pag .img-contenedor {
+    margin-bottom: 1rem;
+}
+
+.especialidad-pag .img-contenedor img {
+    box-shadow: 0 0 5px black;
+}
+
+.especialidad-pag .titulo {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+/* == PAGINA QUIENES SOMOS */
+
+.quienes-somos h2 {
+    text-transform: uppercase;
+    color: var(--text-naranja)
+}
+
+.contenido-quienes-somos img {
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .contenido-quienes-somos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* == PAGINA CENTROS MEDICOS */
+
+.cedes h2 {
+    text-transform: uppercase;
+}
+
+.lista-cedes {
+    display: block;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: .5rem;
+    background-color: var(--principal);
+    color: var(--claro);
+    text-align: center;
+}
+
+.lista-cedes option {
+    color: var(--claro);
+    text-align: center;
+}
+
+.cedes-contenido .mapa-contenedor {
+    display: block;
+    max-width: 90rem;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.452);
+    margin-bottom: 2rem;
+}
+
+.cedes-contenido .mapa-contenedor iframe {
+    width: 100%;
+}
+
+.cedes .info {
+    text-align: center;
+}
+
+.cedes .info .dias {
+    color: var(--naranja);
+    font-weight: 700;
+}
+
+.cedes .info .horario {
+    color: var(--text-claro)
+}
+
+/* ///////////////////////////////////////////////
+        CODIGO MICHELLE
+////////////////////////////////////////////////*/
+
+/*contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+fieldset section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.field2 section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+@media (min-width: 1200px) {
+    form {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 480px) {
+    .form {
+        width: 100%;
+    }
+}
+
+textarea {
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+/* ingreso Paciente */
+.data-os {
+    display: flex;
+    flex-direction: column;
+}
