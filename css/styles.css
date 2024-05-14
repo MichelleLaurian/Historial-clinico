@@ -159,6 +159,12 @@ input {
     margin: 0.5rem 0;
     font-weight: 500;
 }
+
+.successForm{
+    color:var(--text-azul);
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
 ////////////////////////////////////////////////*/
@@ -648,22 +654,6 @@ textarea {
     border-radius: 0.6rem;
 }
 
-    
-/* input[type="file"] {
-    display: none;
-
-} */
-
-/* .custom-file-upload {
-    display: inline-block;
-    padding: 0.7rem;
-    cursor: pointer;
-
-} */
-/* sign in */
-.form-signin-page form{
-    height: 50vh;
-    }
 /* ingreso Paciente */
 .data-os {
     display: flex;
