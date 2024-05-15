@@ -88,6 +88,25 @@ img {
     display: block;
 }
 
+.form {
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.form input:not([type="submit"], [type="reset"], [type="radio"], [type="checkbox"]),
+.form textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.form label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 /* UTILIDADES */
 
 .main {
@@ -634,28 +653,13 @@ input {
     max-width: 40rem;
     background-color: aquamarine;
     border: 1px solid var(--secundario);
-    padding: 3rem;
-    border-radius: 1rem;
 }
 .form-login-admin .campos {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
-.form-login-admin .campo {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-.form-login-admin label {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.form-login-admin input {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    border: 1px solid var(--secundario);
-}
+
 .form-login-admin input:focus {
     outline: none;
     border: 2px solid var(--naranja)
