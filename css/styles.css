@@ -142,7 +142,23 @@ img {
     margin-bottom: 2rem;
     border: none;
 }
-
+.error,
+.exito {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.error {
+    background-color: rgb(242, 185, 185);
+    color: red;
+}
+.exito {
+    background-color: rgb(71, 198, 71);
+    color: rgb(107, 223, 107);
+}
+/* 
 fieldset {
     border: none;
 }
@@ -152,7 +168,7 @@ input {
     padding: 1.5rem;
     border-radius: 1rem;
     cursor: pointer;
-}
+} */
 
 .errorMessage{
     color: var(--text-rojo);
@@ -606,6 +622,48 @@ input {
     color: var(--text-claro)
 }
 
+/* == PAGINA ADMIN LOGIN*/
+
+.login-admin     h3 {
+    text-transform: uppercase;
+    color: var(--text-naranja);
+}
+
+.form-login-admin {
+    width: 80%;
+    max-width: 40rem;
+    background-color: aquamarine;
+    border: 1px solid var(--secundario);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.form-login-admin .campos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.form-login-admin .campo {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.form-login-admin label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form-login-admin input {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--secundario);
+}
+.form-login-admin input:focus {
+    outline: none;
+    border: 2px solid var(--naranja)
+}
+
+.form-login-admin .boton {
+    margin-top: 2rem;
+}
 /* ///////////////////////////////////////////////
         CODIGO MICHELLE
 ////////////////////////////////////////////////*/
