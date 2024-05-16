@@ -143,17 +143,6 @@ img {
     border: none;
 }
 
-fieldset {
-    border: none;
-}
-
-input {
-    margin: 0.6rem 0;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
 .errorMessage{
     color: var(--text-rojo);
     margin: 0.5rem 0;
@@ -611,7 +600,23 @@ input {
 ////////////////////////////////////////////////*/
 
 /*contacto */
-form {
+fieldset {
+    border: none;
+}
+.contacto-page-form{
+    border:  red solid 1px;
+}
+.contacto-page-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-page-form .field1 section{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+/* form {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -628,6 +633,18 @@ fieldset section {
     flex-direction: row;
     gap: 2rem;
 }
+
+fieldset {
+    border: none;
+}
+
+input {
+    margin: 0.6rem 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
 
 
 @media (min-width: 1200px) {
@@ -655,7 +672,7 @@ textarea {
 }
 
 /* ingreso Paciente */
-.data-os {
+/*.data-os {
     display: flex;
     flex-direction: column;
-}
+} */
