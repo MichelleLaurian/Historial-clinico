@@ -142,6 +142,22 @@ img {
     margin-bottom: 2rem;
     border: none;
 }
+.exito, .error {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+.exito {
+    background-color: rgb(138, 246, 138);
+    color: green;
+}
+.error {
+    background-color: rgb(244, 177, 177);
+    color: red;
+}
 
 .errorMessage{
     color: var(--text-rojo);

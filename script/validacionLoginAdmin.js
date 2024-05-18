@@ -11,7 +11,7 @@ function varidarInput(e){
     const valor = e.target.value;
    
     if(valor.trim() == "") {
-        mostrarAlerta("Campo es obligatorio", "error", e);
+        mostrarAlerta("Campo obligatorio", "error", e);
     }
 }
 
