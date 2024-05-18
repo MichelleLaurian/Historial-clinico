@@ -21,7 +21,7 @@ function mostrarAlerta(mensaje, tipo, e) {
 
     if(tipo == "error"){
         const alerta = document.createElement("div");
-        alerta.classList.add("error");
+        alerta.classList.add("errorMessage");
         alerta.textContent = mensaje;
 
         e.target.parentElement.appendChild(alerta);
@@ -33,10 +33,10 @@ function mostrarAlerta(mensaje, tipo, e) {
 }
 
 function limpiarAlertas(e) {
-    const error = e.target.nextElementSibling;
+    const errorMessage = e.target.nextElementSibling;
 
-    if(error){
-        error.remove();
+    if(errorMessage){
+        errorMessage.remove();
     }
 }
 
