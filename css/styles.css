@@ -88,25 +88,6 @@ img {
     display: block;
 }
 
-.form {
-    padding: 3rem;
-    border-radius: 1rem;
-}
-.form input:not([type="submit"], [type="reset"], [type="radio"], [type="checkbox"]),
-.form textarea {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid gray;
-    margin-top: 1rem;
-}
-
-.form label {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 /* UTILIDADES */
 
 .main {
@@ -161,21 +142,16 @@ img {
     margin-bottom: 2rem;
     border: none;
 }
-.error,
-.exito {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: .5rem;
+
+fieldset {
+    border: none;
 }
-.error {
-    background-color: rgb(242, 185, 185);
-    color: red;
-}
-.exito {
-    background-color: rgb(71, 198, 71);
-    color: rgb(107, 223, 107);
+
+input {
+    margin: 0.6rem 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
 .errorMessage{
@@ -630,39 +606,12 @@ img {
     color: var(--text-claro)
 }
 
-/* == PAGINA ADMIN LOGIN*/
-
-.login-admin     h3 {
-    text-transform: uppercase;
-    color: var(--text-naranja);
-}
-
-.form-login-admin {
-    width: 80%;
-    max-width: 40rem;
-    background-color: aquamarine;
-    border: 1px solid var(--secundario);
-}
-.form-login-admin .campos {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.form-login-admin input:focus {
-    outline: none;
-    border: 2px solid var(--naranja)
-}
-
-.form-login-admin .boton {
-    margin-top: 2rem;
-}
 /* ///////////////////////////////////////////////
         CODIGO MICHELLE
 ////////////////////////////////////////////////*/
 
 /*contacto */
-/* form {
+form {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -703,78 +652,10 @@ textarea {
     margin: 0.6rem 0;
     padding: 0.6rem;
     border-radius: 0.6rem;
-} */
+}
 
 /* ingreso Paciente */
 .data-os {
     display: flex;
     flex-direction: column;
-}
-
-/* CONTACTANOS */
-
-
-.contactanos-contenido h3 {
-    text-transform: uppercase;
-    color: var(--naranja);
-}
-
-.form-contactanos {
-    width: 90%;
-    max-width: 80rem;
-    margin: 0 auto;
-    background-color: aquamarine;
-    padding: 2rem;
-    border: 1px solid var(--secundario);
-    border-radius: 1rem;
-}
-
-/* seleccionamos todos los imput excepto los tipo checkbox, y ademas el textarea */
-.form-contactanos input:not([type="checkbox"]),
-.form-contactanos textarea {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid var(--secundario);
-}
-/* con :focus indicamos que cuando se haga click dentro del input este cambiara de color (evitamos los input checkbox) */
-.form-contactanos input:not([type="checkbox"]):focus,
-.form-contactanos textarea:focus {
-    outline: none;
-    border-color: var(--naranja);
-}
-
-.form-contactanos .campos {
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .form-contactanos .campos {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* aca en ves de usar nth-child podrias ponerle un class con el nombre y llamarlo para que sea mas claro */
-
-    /* .form-contactanos .asunto,
-    .form-contactanos .mensaje {
-        grid-column: 2 span;
-    } */
-             
-    .form-contactanos .campo:nth-child(6),
-    .form-contactanos .campo:nth-child(7) {
-        grid-column: 2 span; /* le decimos que ocupe 2 columnas del grid*/
-    }
-}
-
-.form-contactanos .campos textarea {
-    resize: none; 
-    /* evitamos que se pueda modificar el textarea desde la pagina*/
-}
-
-.form-contactanos .campo span {
-    display: block;
-    font-weight: 700;
 }

@@ -28,42 +28,58 @@
     </div>
   </header>
   <main class="main contenedor sombra">
+    <section class="contacto-page form">
+      <form>
+        <h3>Contáctanos</h3>
+        <fieldset class="field1">
+          <section>
+            <input type="text" name="name" id="name" placeholder="Juan Alberto Pereira">
+            <div class="errorMessage " id="errorMessageName"></div>
 
-    <section class="contactanos-contenido">
-      <h3>Contactanos</h3>
-      <form action="#" class="form-contactanos sombra ">
-        <div class="campos"> <!-- creamos este div para poder separar los campos del boton enviar y asi poder aplicar las columnas grid sin perjudicar la ubicacion del boton-->
-          <div class="campo">
-            <input type="text" name="name" id="name" placeholder="Name">
-          </div>
-          <div class="campo">
-            <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-          </div>
-          <div class="campo">
             <input type="email" name="email" id="email" placeholder="juan@alberto.com">
-          </div>
-          <div class="campo">
-            <input type="number" name="phone" id="phone" placeholder="TEL: 1123456789">
-          </div>
-          <div class="campo">
-            <label for=""><span>¿Cómo te contactamos?</span></label>
+            <div class="errorMessage " id="errorMessageMail"></div>
+
+            <input type="number" name="phone" id="phone" placeholder="1123456789">
+            <div class="errorMessage " id="errorMessagePhone"></div>
+
+          </section>
+        </fieldset>
+        <fieldset class="field2">
+          <legend>¿Cómo te contactanos? </legend>
+          <section>
             <label for="phoneForContact">Celular</label>
             <input type="checkbox" name="phoneForContact" id="phoneForContact" value="phoneForContact">
             <label for="emailForContact">E-mail</label>
             <input type="checkbox" name="emailForContact" id="emailForContact" value="emailForContact" checked>
-          </div>
-          <div class="campo">
+          </section>
+        </fieldset>
+        <fieldset class="field3">
+          <section>
             <input type="text" name="asunto" id="asunto" placeholder="Asunto : Consulta de servicio">
-          </div>
-          <div class="campo">
-            <textarea name="description" id="description" cols="30" rows="10" placeholder="Comentario ..."></textarea>
-          </div>
+            <div class="errorMessage " id="errorMessageAsunto"></div>
 
-        </div>
-        <div class="btn-contenedor derecha">
-          <a href="#" class="boton">Enviar</a>
-        </div>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Comentario ..."></textarea>
+            <div class="errorMessage " id="errorMessageComent"></div>
+
+          </section>
+        </fieldset>
+        <fieldset class="flied4">
+          <legend>Unete a nuestro equipo </legend>
+          <section>
+            <!-- <label 
+            for="file-upload" 
+            class="custom-file-upload">
+              Adjuntar archivo
+            </label> -->
+            <input id="file-upload" type="file" />
+            <div class="errorMessage " id="errorMessagefile"></div>
+
+          </section>
+        </fieldset>
+        <div class="successForm" id="successForm"></div>
+        <button class="boton">Enviar</button>
       </form>
+
     </section>
   </main>
   <footer class="footer">
