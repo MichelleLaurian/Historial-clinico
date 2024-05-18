@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cardiología",
+    "descripcion": "Especialidad médica que se ocupa del diagnóstico y tratamiento de las enfermedades del corazón y del sistema circulatorio."
+  },
+  {
+    "id": 2,
+    "titulo": "Cirugía",
+    "descripcion": "Especialidad médica que utiliza técnicas quirúrgicas para diagnosticar y tratar enfermedades, lesiones y trastornos."
+  },
+  {
+    "id": 3,
+    "titulo": "Dermatología",
+    "descripcion": "Especialidad médica que se encarga del diagnóstico y tratamiento de enfermedades de la piel, cabello y uñas."
+  },
+  {
+    "id": 4,
+    "titulo": "Diabetología",
+    "descripcion": "Especialidad médica enfocada en el diagnóstico y tratamiento de la diabetes y trastornos relacionados con el metabolismo de la glucosa."
+  },
+  {
+    "id": 5,
+    "titulo": "Fonoaudiología",
+    "descripcion": "Especialidad médica que se ocupa del estudio, diagnóstico y tratamiento de trastornos de la comunicación, audición y lenguaje."
+  },
+  {
+    "id": 6,
+    "titulo": "Ginecología",
+    "descripcion": "Especialidad médica que se centra en la salud reproductiva de la mujer, incluyendo el diagnóstico y tratamiento de enfermedades ginecológicas."
+  },
+  {
+    "id": 7,
+    "titulo": "Infectología",
+    "descripcion": "Especialidad médica dedicada al estudio, diagnóstico y tratamiento de enfermedades infecciosas causadas por virus, bacterias, hongos y parásitos."
+  },
+  {
+    "id": 8,
+    "titulo": "Neurología",
+    "descripcion": "Especialidad médica que se ocupa del diagnóstico y tratamiento de enfermedades del sistema nervioso, incluyendo el cerebro, médula espinal y nervios periféricos."
+  },
+  {
+    "id": 9,
+    "titulo": "Odontología",
+    "descripcion": "Especialidad médica dedicada al diagnóstico, prevención y tratamiento de enfermedades y trastornos de la cavidad oral y estructuras relacionadas."
+  },
+  {
+    "id": 10,
+    "titulo": "Oncología",
+    "descripcion": "Especialidad médica que se enfoca en el diagnóstico y tratamiento del cáncer, incluyendo terapias como la quimioterapia y la radioterapia."
+  },
+  {
+    "id": 11,
+    "titulo": "Psicología",
+    "descripcion": "Especialidad médica que estudia el comportamiento humano, los procesos mentales y emocionales, y proporciona tratamiento para trastornos mentales y emocionales."
+  },
+  {
+    "id": 12,
+    "titulo": "Radiología",
+    "descripcion": "Especialidad médica que utiliza técnicas de imagen para diagnosticar y tratar enfermedades y lesiones, utilizando rayos X, resonancia magnética, ultrasonido, entre otros."
+  },
+  {
+    "id": 13,
+    "titulo": "Traumatología",
+    "descripcion": "Especialidad médica que se enfoca en el diagnóstico y tratamiento de lesiones traumáticas del sistema musculoesquelético, incluyendo huesos, articulaciones, músculos y tendones."
+  },
+  {
+    "id": 14,
+    "titulo": "Urología",
+    "descripcion": "Especialidad médica que se ocupa del diagnóstico y tratamiento de enfermedades del sistema urinario, así como de trastornos del aparato reproductor masculino."
+  }
+]

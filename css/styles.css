@@ -143,28 +143,24 @@ img {
     border: none;
 }
 
-fieldset {
-    border: none;
+.errorMessage,
+.successMessage {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
 }
-
-input {
-    margin: 0.6rem 0;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    cursor: pointer;
+.successMessage{
+    background-color: rgb(138, 246, 138);
+    color: green;
 }
-
 .errorMessage{
-    color: var(--text-rojo);
-    margin: 0.5rem 0;
-    font-weight: 500;
+    background-color: rgb(244, 177, 177);
+    color: red;
 }
 
-.successForm{
-    color:var(--text-azul);
-    margin: 0.5rem 0;
-    font-weight: 500;
-}
 /* ///////////////////////////////////////////////
         CODIGO LUCAS 
 ////////////////////////////////////////////////*/
@@ -606,6 +602,45 @@ input {
     color: var(--text-claro)
 }
 
+/*  -- PAGINA ADMIN LOGIN*/
+
+.login-admin h3 {
+    text-transform: uppercase;
+    color: var(--text-naranja);
+}
+.form-login-admin {
+    width: 80%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 3rem;
+    border: 1px solid var(--principal);
+    border-radius: 1rem;
+    background-color: #62bfee3a
+}
+.form-login-admin .campo {
+    margin-top: 2rem;
+}
+.form-login-admin label {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-login-admin input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid gray;
+    margin-top: 1rem;
+}
+.form-login-admin input:focus {
+    border: 1px solid var(--naranja);
+}
+
+.form-login-admin .btn_login {
+    margin-top: 2rem;
+}
 /* ///////////////////////////////////////////////
         CODIGO MICHELLE
 ////////////////////////////////////////////////*/
