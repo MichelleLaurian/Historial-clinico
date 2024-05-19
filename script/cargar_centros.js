@@ -6,31 +6,22 @@ const iframe = document.querySelector(".cedes iframe");
 
 
 function obtenerCentros() {
-    return new Promise((resolve, reject) => {
-        fetch("/db/centros_de_atencion.json")
-            .then( response => {
-                if(response.ok) {
-                    resolve(response);
-                }else {
-                    reject("Error en la peticion http");
-                }
-            })
-            .catch( error => console.log(error));            
-    })
+    return fetch("/db/centros_de_atencion.json")
+                .then( response => response.json())
+                .catch( error => console.log(error));
 }
-function cargarCentros() {
+function mostrarCentrosHTML() {
     obtenerCentros()
         .then(response => response.json())
         .then( centros => {
             centros.forEach( centro => {
                 const opcion = document.createElement("option");
-                opcion.value = `${centro.id}`;
-                opcion.textContent = `${centro.nombre}`
-                lista_select.appendChild(opcion);
+                    opcion.value = `${centro.id}`;
+                    opcion.textContent = `${centro.nombre}`
+                    lista_select.appendChild(opcion);
             })
         })
         .catch( error => console.log(error));
-    
 }
 
 function actualizarIframe(e) {
@@ -47,7 +38,7 @@ function actualizarIframe(e) {
 }
 
 function listeners() {
-    cargarCentros();
+    mostrarCentrosHTML();
 }
 
 document.addEventListener("DOMContentLoaded", listeners);
