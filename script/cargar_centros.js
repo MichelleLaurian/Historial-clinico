@@ -6,15 +6,21 @@ const iframe = document.querySelector(".cedes iframe");
 
 
 function obtenerCentros() {
-    return new Promise((exito, error) => {
+    return new Promise((resolve, reject) => {
         fetch("/db/centros_de_atencion.json")
-            .then( respuesta => respuesta.json())
-            .then( centros => exito(centros))
-            .catch( error => error(error));            
+            .then( response => {
+                if(response.ok) {
+                    resolve(response);
+                }else {
+                    reject("Error en la peticion http");
+                }
+            })
+            .catch( error => console.log(error));            
     })
 }
 function cargarCentros() {
     obtenerCentros()
+        .then(response => response.json())
         .then( centros => {
             centros.forEach( centro => {
                 const opcion = document.createElement("option");
@@ -24,8 +30,6 @@ function cargarCentros() {
             })
         })
         .catch( error => console.log(error));
-
-    return
     
 }
 
