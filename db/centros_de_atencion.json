@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "nombre": "Centro Médico Norte",
+        "nombre": "Hospital Italiano",
         "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52542.69375504636!2d-58.492374256384764!3d-34.606225882419054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6665a52ca5%3A0xa08481f63a95b599!2sHospital%20Italiano%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715911261093!5m2!1ses-419!2sar"
     },
     {
         "id": 2,
-        "nombre": "Hospital Central",
+        "nombre": "Hospital Garrahan",
         "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52542.69375504636!2d-58.492374256384764!3d-34.606225882419054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb232d430041%3A0xb914ae1d2c269fcc!2sHospital%20Garrahan!5e0!3m2!1ses-419!2sar!4v1715911625784!5m2!1ses-419!2sar"
     },
     {
         "id": 3,
-        "nombre": "Clínica del Este",
+        "nombre": "Hospital Aleman",
         "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52542.69375504636!2d-58.492374256384764!3d-34.606225882419054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9a143a15f1%3A0xaffc35dc3edb2e51!2sHospital%20Alem%C3%A1n!5e0!3m2!1ses-419!2sar!4v1715911802324!5m2!1ses-419!2sar"
     },
     {
         "id": 4,
-        "nombre": "Centro de Salud Oeste",
+        "nombre": "Hospital Agudos José María",
         "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85911.55009319696!2d-58.5129748816153!3d-34.64894933129308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccafa49f820cd%3A0xa30926621a570a15!2sHospital%20General%20de%20Agudos%20Jos%C3%A9%20Mar%C3%ADa%20Ramos%20Mej%C3%ADa!5e0!3m2!1ses-419!2sar!4v1715911858390!5m2!1ses-419!2sar"
     },
     {
         "id": 5,
-        "nombre": "Hospital del Sur",
+        "nombre": "Hospital Agudos Dr. Enrique Tornú",
         "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136368.4219554572!2d-58.587562305314236!3d-34.66469494160903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb60da0fc9c0b%3A0xed3460431c1384fd!2sHospital%20General%20de%20Agudos%20Dr.%20Enrique%20Torn%C3%BA!5e0!3m2!1ses-419!2sar!4v1715911922981!5m2!1ses-419!2sar"
     }
 ]

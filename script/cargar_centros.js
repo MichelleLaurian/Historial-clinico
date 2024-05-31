@@ -12,6 +12,7 @@ function obtenerCentros() {
 }
 function mostrarCentrosHTML() {
     obtenerCentros()
+        .then(response => response.json())
         .then( centros => {
             centros.forEach( centro => {
                 const opcion = document.createElement("option");
