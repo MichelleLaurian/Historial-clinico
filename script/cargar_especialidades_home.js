@@ -26,12 +26,57 @@ function mostrarEspecialidadesHomeHTML() {
                     <h3 class="titulo">${titulo}</h3>
                     <a href="#" class="boton" data-id=${id}>+ Info</a>
                 </div>
-                `
+                `;
 
-                especialidades_contenido.appendChild(especialidad_div)
+                const btn = especialidad_div.querySelector(".boton");
+                btn.onclick = (e) => {
+                    crearModalEspecialidad(e);
+                }
+                especialidades_contenido.appendChild(especialidad_div);
             }
+            
+            
         })
         .catch( error => console.log(error));
+    }
+    
+function crearModalEspecialidad(e){
+    e.preventDefault();
+    const id = e.target.getAttribute("data-id");
+
+    obtenerEspecialidades()
+    .then( especialidades => {
+        
+        const especialidad = especialidades.filter(especialidad => especialidad.id == id);
+        
+        const {titulo, descripcion} = especialidad[0];
+        const body = document.querySelector("body");
+        
+        const contenido = document.createElement("div");
+        contenido.classList.add("contenido-modal");
+        
+        const h3 = document.createElement("h3");
+        h3.textContent = titulo;
+        const parrafo = document.createElement("p");
+        parrafo.textContent = descripcion;
+        
+        contenido.appendChild(h3);
+        contenido.appendChild(parrafo);
+
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
+        modal.appendChild(contenido);
+        
+        body.appendChild(modal);
+
+        body.classList.add("noScroll");
+        body.onclick = () => {
+            modal.remove();
+            body.classList.remove("noScroll");
+        }
+        
+    })
+    .catch( error => console.log(error));
 }
 
 function listeners() {
