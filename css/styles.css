@@ -569,6 +569,7 @@ input {
 
 .cedes h2 {
     text-transform: uppercase;
+    color: var(--text-naranja);
 }
 
 .lista-cedes {
